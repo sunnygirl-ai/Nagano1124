@@ -1,0 +1,158 @@
+
+body{
+    
+}
+.Nagano{
+    margin: 0 auto;
+    background-image: url(../img/kamikochi_taisho_pond.jpg);
+    background-size: cover;
+    height: 736px;    
+    padding-left: 100px;
+}
+
+.Nagano h1{
+    padding-top: 150px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Nagano p{
+    color: white;
+}
+
+.Nagano a{
+    display: block;
+    width: 120px;
+    height: 32px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* .wrapper{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 20px;
+} */
+
+.discount-container{
+    width: 1100px;
+    height: 204px;
+    margin: 0 auto;
+
+    /* border: 3px solid red; */
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.discount{
+    display: flex;
+    justify-content: space-between;   
+}
+
+.popular{
+    width: 1100px;
+    /* height: 600px; */
+    /* border: 3px solid grey; */
+    margin: 0 auto;   
+    margin-top: 100px;
+}
+
+.popular p{
+    color: gray;
+}
+
+.popular span{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.popular ul{
+    /* margin: 0 auto; */
+    margin-bottom: 80px;
+    height: 280px;   
+    
+}   
+
+.popular li{
+    float: left;
+    margin: 10px;
+    text-align: left;
+    margin-top: 20px;  
+
+}
+
+.popular li img{
+    width: 240px;
+    height: 192px;
+    
+}
+
+.place{
+    width: 1100px;
+    /* height: 125px; */
+    /* border: 3px solid  red; */
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.place p{
+    font-size: 20px;
+}
+
+.place ul{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.place li img{
+    width: 240px;
+    height: 192px;
+
+}
+
+.place li p{
+    font-size: 16px ;
+ 
+}
+
+.news{
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 20px; 
+}
+
+.news ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.begin h2{
+    text-align: center;
+
+}
+.begin ul{
+    background-image: url(../img/page1-18.png);    
+    display: flex;
+    justify-content: space-evenly;
+    background-size: cover;
+    height: 552px;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.brgin li{
+    margin: 10px;
+}

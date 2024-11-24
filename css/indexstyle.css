@@ -1,0 +1,93 @@
+@import url('reset.css');
+@import url('basic.css');
+
+.main{
+    margin: 0 auto;
+    background-image: url(../img/open1.jpg);
+    background-size: cover;
+    height: 732px;
+    background-position: center bottom;
+
+    
+}
+.main h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    padding: 150px;
+    animation: bigTitleA .5s cubic-bezier(0.25,.1,.25,.1) forwards;
+   
+}
+
+@keyframes bigTitleA{
+	0%{ transform: translateX(-170px); opacity: 0; }
+	100%{ transform: translateX(0px); opacity: 1; }
+}
+.main2{
+    background-image: url(../img/open4.1.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.main2 .kids{
+    margin-left: 200px;
+}
+
+.main2 .image-right{
+    width: 440px;
+    height: 360px;
+    background: #EEE5E9;
+    border-radius: 50px;
+    margin-right: 100px;    
+}
+
+.main2 .box{
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.main2 .box li{
+    padding: 30px;
+    width: 320px;
+    height: 40px;
+    border-bottom: 3px solid #5686E1;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    
+}
+    
+
+.box li:hover::before{
+    content: '\f0c2';
+    font-family: 'Font Awesome 6 Free';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    color: #5686E1;
+    top: 0;
+    bottom: 0;
+    left:0;
+    margin-top: 30px;
+    transition: all .5s;
+}
+
+.box li:hover{
+    color: #5686E1;
+}
+
+
+    
+
+
+  
+
+

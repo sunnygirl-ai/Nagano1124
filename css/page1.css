@@ -365,3 +365,26 @@ h2{
     font-weight: bold;
     font-size: 16px;
 }
+
+/* ----------------斷點--------------- */
+
+@media screen and (max-width:820px){
+.place ul{
+    gap:10px;
+}
+
+}
+
+@media screen and (max-width: 430px;){
+    .popular{
+       
+
+    }
+    .popular li{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+}
+    
+}

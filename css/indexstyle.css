@@ -1,7 +1,6 @@
 @import url('reset.css');
 @import url('basic.css');
 
-
 .main{
     margin: 0 auto;
     background-image: url(../img/open1.jpg);
@@ -40,6 +39,25 @@
     margin-left: 200px;
 
 }
+.main2 img {
+    width: 360px;
+    height: 360px;
+    /* height: auto; */
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px;
+    /* margin-bottom: 20px; */
+    transition: opacity 0.3s ease; 
+  }
+.main2 .show{
+    display: block;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.main2 .hide{
+    display: none;
+}
 
 .main2 .image-right{
     width: 440px;
@@ -53,7 +71,7 @@
     /* display: flex;
     align-items: center; */
     
-    margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 30px;
 }
 
@@ -65,6 +83,13 @@
     font-weight: bold;
     text-align: left;
     position: relative;
+    cursor: pointer;
+    color: #333;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-left: 40px;
+
     
 }
     
@@ -75,9 +100,10 @@
     height: 30px;
     position: absolute;
     color: #5686E1;
-    top: 0;
+    top: 20%;
     bottom: 0;
     left:0;
+    transform: translateY(-50%);
     margin-top: 30px;
     transition: all .5s;
 }
@@ -96,6 +122,15 @@
         /* margin: 0 auto; */
 
     }
+    
+    .main2 .box li{
+        
+    }
+
+    .box li:hover::before{
+        margin-top: 20px;
+        top:10%;
+    }
     .main2 .kids{
         margin: 0 auto; 
     }
@@ -104,29 +139,45 @@
         margin: 20px 0;
         
     }
-
+    footer{
+        margin-top: 80px;
+    }
 }
 
 @media screen and (max-width:820px){
     .main2{
         background-image: none;
     }
-    .main2 .kids{
+    /* .main2 .kids{
        display: block;
        margin-top: 60px;
     }
-   
+    */
     .main2 .box{
-        padding: 10px;
+        
     }
-
-    
-    footer{
-        margin-top: 100px;
-    }
-
-
 }
   
+@media screen and (max-width:430px){
+
+    .main2 .show{
+        width: 40%;
+    }
+
+    .copyright{
+        position: ;
+    }
+    .copyright p{
+        font-size: 12px;
+    }
+    footer .fb-ig{
+        padding-right: 10px;    
+    }   
+    .fb-ig a{
+        margin-left: 10px;
+    } 
+}
+
+
 
 

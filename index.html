@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/indexstyle.css">
-    <!-- <link rel="stylesheet" href="css/index-rwd.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/gsap.js"></script>
     <script src="./js/jquery-3.7.1.js"></script>
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
     <title>Nagano</title>
 </head>
-<body>
+
         <div class="nav">
         
             <a href="index.html">
@@ -96,30 +100,30 @@
 
         <div class="main2">
             <div>
-                <img src="./img/open3.png" alt="" class="kids">
+                <!-- <img src="./img/open3.png" alt="" class="kids"> -->
 
-                <!-- <img src="" alt="" class="show"> -->
-                <!-- <img src="" alt="" class="hide"> -->
-                <!-- <img src="" alt="" class="hide"> -->
+                <img id="mainImage" src="./img/open3/open3-1.jpg" alt="" class="show">
+                <img src="./img/open3/open3-2.jpg" alt="" class="hide" data-index="2"> 
+                <img src="./img/open3/open3-3.jpg" alt="" class="hide" data-index="3">
             </div>
         
             <div class="image-right">
                 <ul>
                     
                     <div class="box">
-                        <li>
+                        <li data-image="./img/open3/open3-1.jpg" >
                             <span class="small-text">2025.01.26-2025.02.02</span>
                             <br>
                             <span class="large-text">過年行程</span>
                         </li>
                         
-                        <li>
+                        <li data-image="./img/open3/open3-2.jpg">
                             <span class="small-text">2025.01.21</span>
                             <br>
                             <span class="large-text">新春活動</span>
                         </li>
 
-                        <li>
+                        <li data-image="./img/open3/open3-3.jpg">
                             <span class="small-text">2025.09.25</span>
                             <br>
                             <span class="large-text">滑雪季活動開跑</span>
@@ -153,6 +157,26 @@
 
         
     </footer>
+
+    <script>
+        const textOptions = document.querySelectorAll('.box li');
+        const mainImage = document.getElementById('mainImage');
+
+
+        textOptions.forEach(option => {
+        option.addEventListener('click', () => {
+        const newImage = option.getAttribute('data-image'); 
+        mainImage.style.opacity = 0; 
+    
+        setTimeout(() => {
+        mainImage.src = newImage; 
+        mainImage.style.opacity = 1; 
+    }, 300); 
+  });
+});
+
+
+    </script>
 
     
 </body>

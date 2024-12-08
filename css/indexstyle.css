@@ -1,6 +1,7 @@
 @import url('reset.css');
 @import url('basic.css');
 
+
 .main{
     margin: 0 auto;
     background-image: url(../img/open1.jpg);
@@ -8,7 +9,6 @@
     height: 732px;
     background-position: center bottom;
 
-    
 }
 .main h1{
     text-align: center;
@@ -38,6 +38,7 @@
 }
 .main2 .kids{
     margin-left: 200px;
+
 }
 
 .main2 .image-right{
@@ -49,13 +50,15 @@
 }
 
 .main2 .box{
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
+    
     margin-top: 30px;
     margin-left: 30px;
 }
 
 .main2 .box li{
-    padding: 30px;
+    padding: 20px;
     width: 320px;
     height: 40px;
     border-bottom: 3px solid #5686E1;
@@ -65,7 +68,6 @@
     
 }
     
-
 .box li:hover::before{
     content: '\f0c2';
     font-family: 'Font Awesome 6 Free';
@@ -85,9 +87,46 @@
 }
 
 
+/* ----------------斷點--------------- */
+
+@media screen and (max-width:1100px){
+    .main2{
+        display: flex;
+        flex-direction: column;
+        /* margin: 0 auto; */
+
+    }
+    .main2 .kids{
+        margin: 0 auto; 
+    }
     
+    .main2 .image-right{
+        margin: 20px 0;
+        
+    }
+
+}
+
+@media screen and (max-width:820px){
+    .main2{
+        background-image: none;
+    }
+    .main2 .kids{
+       display: block;
+       margin-top: 60px;
+    }
+   
+    .main2 .box{
+        padding: 10px;
+    }
+
+    
+    footer{
+        margin-top: 100px;
+    }
 
 
+}
   
 
 

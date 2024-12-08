@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/page2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/jquery-3.7.1.js"></script>
+
+    <title>最近逛過</title>
+</head>
+
+<body>
+    <!----------------- header ----------------------->
+    <div class="nav">
+
+        <a href="index.html"></a>
+        <img src="./img/Logo.png" alt="" class="logo">
+        <div class="search-container">
+            <div>
+                <input class="text" placeholder=" &nbsp;搜尋活動" maxlength="15">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="hamburger-menu">
+            <div class="menu transition">
+                <div class="bar bar1 transition"></div>
+                <div class="bar bar2 transition"></div>
+                <div class="bar bar3 transition"></div>
+    
+                <ul class="transition">
+                    <li><a href="page1.html" class="transition">精彩活動</a></li>
+                    <li><a href="#" class="transition">打開app</a></li>
+                    <li><a href="page2.html" class="transition">最近逛過</a></li>
+                    <li><a href="#" class="transition">購物車</a></li>
+                    <li><a href="index.html" class="transition">回首頁</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul>
+            <li>
+                <a href="page1.html">精彩活動
+                    <div class="icon">
+                        <img src="./img/ski-blue.svg" alt="" class="hover">
+                        <img src="./img/ski-bold.svg" alt="" class="normal">
+                    </div>
+                </a>
+            </li>
+            <li><a href="#">打開App
+                    <div class="icon">
+                        <img src="./img/ski-blue.svg" alt="" class="hover">
+                        <img src="./img/ski-bold.svg" alt="" class="normal">
+                    </div>
+                </a></li>
+            <li><a href="page2.html">最近逛過
+                    <div class="icon">
+                        <img src="./img/ski-blue.svg" alt="" class="hover">
+                        <img src="./img/ski-bold.svg" alt="" class="normal">
+                    </div>
+                </a></li>
+            <li><a href="#">購物車
+                    <div class="icon">
+                        <img src="./img/ski-blue.svg" alt="" class="hover">
+                        <img src="./img/ski-bold.svg" alt="" class="normal">
+                    </div>
+                </a></li>
+
+        </ul>
+        <img src="./img/person.svg" alt="" class="person">
+
+    </div>
+    <script>
+        $(function(){
+            $('.menu.transition').click(function(){
+                $('.menu.transition').toggleClass('active')
+            })                  
+        });
+    </script> 
+
+    <!-- start -->
+    <div class="wrapper">
+        <div class="snow-monkey">
+            <h1>日本長野雪猴一日遊｜地獄谷野猿公苑～<br>欣賞雪猴泡湯＆日本國寶・善光寺＆漫步小布施｜<br>長野車站出發</h1>
+
+            <div class="words">
+
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <span class="words-star"></span>
+                <span class="common-score">4.8</span>
+                <span class="reviews">(82則評論)</span>
+                <span class="booked">1K+ 人參加過</span>
+                <div class="addwish-list">
+                    <span class="icon"><i class="fa-regular fa-heart"></i></span>
+                    <span class="wish-list">加入我的最愛</span>
+                </div>
+            </div>
+
+            <div class="banner">
+
+                <div class="banner-img">
+                    <img src="./img/page1-9.png" alt="">
+                </div>
+            
+
+                <div class="banner-info">
+                    <div class="highlight">
+                        <ul>
+                            <li><a href="">概覽</a></li>
+                            <li><a href="">行程說明</a></li>
+                            <li><a href="">去程及回程詳情</a></li>
+                            <li><a href="">取消策略</a></li>
+                        </ul>
+                        
+                        <div class="experience">
+                            <h4>概覽</h4>
+                            <ul>
+                                <li>長野車站出發，不用搭乘長途車程即可抵達旅途不便景點</li>
+                                <li>地獄谷野猿公苑觀賞野生猿猴泡湯</li>
+                                <li>欣賞擁有日本最大木造寺廟及日本最古老佛像的日本國寶善光寺</li>
+                                <li>漫步在以浮世繪大師葛飾北齋及栗子特產</li>
+                            </ul>
+    
+                            <a href="#" class="details-link">查看詳情 ></a>
+                        </div>
+                    </div>
+    
+                    <div class="info-list">
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i> 熱賣之選 </li>
+                            <li><i class="fa-regular fa-clock"></i> 8小時(預計) </li>
+                            <li><i class="fa-solid fa-mobile-screen"></i> 電子票卷 </li>
+                            <li><i class="fa-solid fa-bolt"></i> 可即時確認預定 </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-option">
+
+                <div class="package">
+                    <div class="select-date">
+                        <p>選擇日期及方案組合</p>
+                        <p>請選擇行程日期</p>
+                        <a href="#"><i class="fa-regular fa-calendar"></i> 查看可預定日期</a>
+                    </div>
+                    
+                    <div class="total-box">
+                        <p>$3,888</p>
+                        <a href="#" class="button">選擇方案</a>
+                    </div>
+                </div>
+
+                <div class="quantity">
+                    <p>數量</p>
+                    <div class="adult">
+                        <p>成人</p>
+                        <div class="counter-right">
+                            <span class="price">$3888</span>
+                            <span class="counter-btn">-</span>
+                            <span class="counter-qty"> 0 </span>
+                            <span class="counter-btn">+</span>
+
+                        </div>
+
+                        
+                    </div>
+                    <div class="kids">
+                        <p>兒童 (6-12歲)</p>
+                        <div class="counter-right">
+                            <span class="price">$2000</span>
+                            <span class="counter-btn">-</span>
+                            <span class="counter-qty"> 0 </span>
+                            <span class="counter-btn">+</span>
+                        </div>
+                    </div>
+                    
+                    <div class="confirm-price">
+                        <p> NT$-</p>
+                    </div>
+                    <div class="total">
+                        <a href="#" class="add-cart">加入購物車</a>
+                        <a href="#" class="order">立即預定</a>
+                    </div>
+                </div>
+            </div>
+            <div class="discount">
+                <div class="first-time-download">
+
+                    <div class="new-user-discount">
+                        <div class="clock">
+                            <p><i class="fa-regular fa-clock"></i>42天  22:57:50</p>   
+                        </div>
+    
+                        <div class="text-container">
+                            <h5>新戶首次下單享85折</h5>
+                            <p>下載App使用優惠碼，立即享折扣!</p>
+                        </div>
+                    </div>
+
+                    <div class="download">
+                        <p>掃描下載App</p>
+                        <img src="./img/qrcode.png" alt="">
+                    </div>
+                 
+                </div>
+
+                <div class="line"> 
+                    
+                    <p>或</p>
+                   
+                </div>
+                
+                <div class="mail">
+                    <p>傳送連結至電子信箱</p>
+                    <input type="text" placeholder="電子信箱">
+                    <a href="">傳送</a>
+                </div> 
+            </div>
+        </div>
+        <!-- end -->
+
+        <!----------------- footer ----------------------->
+        <footer>
+            <img src="./img/nagano2024.png" alt="" class="nagano2024">
+
+            <div class="mail-subscribe">
+                <input type="email" placeholder="&nbsp; Your mail" class="email-bar">
+                <a href="#">Subscribe</a>
+            </div>
+
+            <div class="copyright">
+                <p>© Copyright 2024. Nagano All Right Reserved</p>
+
+                <div class="fb-ig">
+                    <a href="#"><i class="fa-brands fa-facebook" class="fb"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" class="ig"></i></a>
+
+                </div>
+            </div>
+
+
+        </footer>
+
+</body>
+
+</html>

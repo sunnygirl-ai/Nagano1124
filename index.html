@@ -4,100 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/indexstyle.css">
+    <!-- <link rel="stylesheet" href="css/index-rwd.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="./js/jquery-3.7.1.js"></script>
     <title>Nagano</title>
 </head>
 <body>
-    
-    
-    <div class="nav">
-        <img src="./img/Logo.png" alt="" class="logo">
-        <div class="search-container">
-            <div>
-                <input class="text" placeholder=" &nbsp;搜尋活動">
-                <button type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+        <div class="nav">
+        
+            <a href="index.html">
+            <img src="./img/Logo.png" alt="" class="logo" >
+            </a>
+
+            <div class="search-container">
+                <div>
+                    <input class="text" placeholder=" &nbsp;Winter 2024 open" maxlength="15">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
             </div>
-        </div>
+
+            <div class="hamburger-menu">
+                <div class="menu transition">
+                    <div class="bar bar1 transition"></div>
+                    <div class="bar bar2 transition"></div>
+                    <div class="bar bar3 transition"></div>
         
-        
-        <ul>
-            <li>
-                <a href="page1.html">精彩活動
+                    <ul class="transition">
+                        <li><a href="page1.html" class="transition">精彩活動</a></li>
+                        <li><a href="#" class="transition">打開app</a></li>
+                        <li><a href="page2.html" class="transition">最近逛過</a></li>
+                        <li><a href="#" class="transition">購物車</a></li>
+                        <li><a href="index.html" class="transition">回首頁</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="page1.html">精彩活動
+                        <div class="icon">
+                            <img src="./img/ski-blue.svg" alt="" class="hover">
+                            <img src="./img/ski-bold.svg" alt="" class="normal">
+                        </div>
+                    </a>
+                </li>
+
+                <li><a href="#">打開App
+                    <div class="icon">
+                        <img src="./img/ski-blue.svg" alt="" class="hover">
+                        <img src="./img/ski-bold.svg" alt="" class="normal">  
+                    </div>
+                    </a>
+                </li>
+
+                <li><a href="page2.html">最近逛過
                     <div class="icon">
                         <img src="./img/ski-blue.svg" alt="" class="hover">
                         <img src="./img/ski-bold.svg" alt="" class="normal">
                     </div>
-                </a>
-        </li>
-            <li><a href="#">打開App
-                <div class="icon">
-                    <img src="./img/ski-blue.svg" alt="" class="hover">
-                    <img src="./img/ski-bold.svg" alt="" class="normal">  
-                </div>
-            </a></li>
-            <li><a href="#">最近逛過
-                <div class="icon">
-                    <img src="./img/ski-blue.svg" alt="" class="hover">
-                    <img src="./img/ski-bold.svg" alt="" class="normal">
-                </div>
-            </a></li>
-            <li><a href="#">購物車
-                <div class="icon">
-                    <img src="./img/ski-blue.svg" alt="" class="hover">
-                    <img src="./img/ski-bold.svg" alt="" class="normal">
-                </div>
-            </a></li>
-            
-        </ul>
+                    </a>
+                </li>
+
+                <li><a href="#">購物車
+                    <div class="icon">
+                        <img src="./img/ski-blue.svg" alt="" class="hover">
+                        <img src="./img/ski-bold.svg" alt="" class="normal">
+                    </div>
+                    </a>
+                </li>
+                    
+            </ul>
         <img src="./img/person.svg" alt="" class="person">
         
     </div>
-    <div class="main">
-        <h1>Nagano<br>Winter 2024 open</h1>
-    </div>
 
-    <div class="main2">
-        <div>
-        <img src="./img/open3.png" alt="" class="kids">
+    <script>
+        $(function(){
+            $('.menu.transition').click(function(){
+                $('.menu.transition').toggleClass('active')
+            })                  
+        });
+    </script>   
 
-            <!-- <img src="" alt="" class="show"> -->
-            <!-- <img src="" alt="" class="hide"> -->
-            <!-- <img src="" alt="" class="hide"> -->
+    <div class="wrapper">
+
+        <div class="main">
+            <h1>Nagano<br>Winter 2024 open</h1>
         </div>
-    
-        <div class="image-right">
-            <ul>
-                
-                <div class="box">
-                   <li>
- 
-                       <span class="small-text">2025.01.26-2025.02.02</span>
-                       <br>
-                       <span class="large-text">過年行程</span>
-                      </li>
+
+        <div class="main2">
+            <div>
+                <img src="./img/open3.png" alt="" class="kids">
+
+                <!-- <img src="" alt="" class="show"> -->
+                <!-- <img src="" alt="" class="hide"> -->
+                <!-- <img src="" alt="" class="hide"> -->
+            </div>
+        
+            <div class="image-right">
+                <ul>
                     
-                   <li>
-                    <span class="small-text">2025.01.21</span>
-                       <br>
-                       <span class="large-text">新春活動</span>
-                   </li>
+                    <div class="box">
+                        <li>
+                            <span class="small-text">2025.01.26-2025.02.02</span>
+                            <br>
+                            <span class="large-text">過年行程</span>
+                        </li>
+                        
+                        <li>
+                            <span class="small-text">2025.01.21</span>
+                            <br>
+                            <span class="large-text">新春活動</span>
+                        </li>
 
-                   <li>
-                        <span class="small-text">2025.09.25</span>
-                        <br>
-                        <span class="large-text">滑雪季活動開跑</span>
-                    </li>
+                        <li>
+                            <span class="small-text">2025.09.25</span>
+                            <br>
+                            <span class="large-text">滑雪季活動開跑</span>
+                        </li>
 
-                </div>
-      
-            </ul>
-         
-        </div>
+                    </div>
+        
+                </ul>
+            
+            </div>
+        </div> 
     </div>
-
+    
     <footer>
         <img src="./img/nagano2024.png" alt="" class="nagano2024">
 
@@ -118,6 +153,7 @@
 
         
     </footer>
+
     
 </body>
 </html>

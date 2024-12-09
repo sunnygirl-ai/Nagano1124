@@ -287,7 +287,7 @@ footer{
     background-color: white;
 }
 
-ul li{
+.menu ul li{
     list-style: none;
     padding: 0;
     margin: 10px;

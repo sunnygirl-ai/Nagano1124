@@ -303,3 +303,16 @@ ul li{
 .menu.active .bar1{transform: rotate(-45deg) translate(-9px, 7px);}
 .menu.active .bar2{opacity:0;}
 .menu.active .bar3{transform: rotate(45deg) translate(-9px, -8px);}
+
+
+@media screen and (max-width: 430px;){
+
+.mail-subscribe{
+    display: flex;
+    flex-direction: column;
+}
+.mail-subscribe a{
+    width: 80px;
+}
+
+}
